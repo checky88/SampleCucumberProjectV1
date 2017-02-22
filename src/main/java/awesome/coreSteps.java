@@ -71,13 +71,12 @@ searchBox.sendKeys(textToSearchFor);
 
 }
 
-@Given("^I click the search button$")
-
+@Given("^I click Search$")
 public void i_click_search() throws Throwable {
 
 // Write code here that turns the phrase above into concrete actions
-
-WebElement searchButton = driver.findElement(By.xpath("//*[@id='sblsbb']/button"));
+	//*[@id="_fZl"]/span/svg/path
+WebElement searchButton = driver.findElement(By.xpath("//*[@id='_fZl']/span/svg/path"));
 
 searchButton.click();
 
@@ -95,10 +94,6 @@ findElements.get(0).click();
 
 }
 
-@Given("^I click Search$")
-public void i_click_search(String expectedWebSite){
-    // Write code here that turns the phrase above into concrete actions
-}
 
 @Then("^I should be on \"([^\"]*)\"$")
 
